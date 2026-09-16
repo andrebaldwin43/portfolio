@@ -44,7 +44,7 @@
     --container-small-width: 500px;
 
     --gutter-huge: 12rem;
-    --gutter-medium: 6rem;
+    --gutter-medium: 8rem;
     --gutter-normal: 3rem;
     --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
@@ -572,6 +572,16 @@ border-bottom: 1px solid rgb(35, 37, 40);
     background-color: rgba(15, 5, 45, 0.623);
 }
 
+.job_title {
+    background-color: var(--pink);
+    margin-bottom: 20px;
+    font-size: var(--font-size-small);
+    border-radius: 5px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: fit-content;
+}
 .icons {
     width: 30px;
     height: 30px;
