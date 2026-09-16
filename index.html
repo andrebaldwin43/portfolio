@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-  <!-- Put your site title here -->
   <title>
     Andre Baldwin | Software Developer
   </title>
 
   <meta name="description" content="Software developer.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
   <meta name="keywords" content="Andre Baldwin, Software Developer, JavaScript, React, PHP, Symfony, Laravel, CSS, HTML" />
   <link rel="stylesheet" href="index.css" />
 </head>
@@ -20,201 +18,127 @@
 <body>
 
   <!-- ***** Header ***** -->
-
   <header class="header" role="banner" id="top">
-    <div class="row">
+    <div class="row nav_content">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
+          <li class="nav__item"><a href="#work" class="nav__link">Skills</a></li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#about_me" class="nav__link">About</a>
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
+          <li class="nav__item">
+            <a href="https://docs.google.com/document/d/1BBMYec_U6D8PbzYmz0XevMl-s6jNleEZ/" target="_blank" class="btn">My Resume</a>
+          </li>
+          <li class="nav__item">
+            <a href="https://www.linkedin.com/in/andre-b-532107196/" target="_blank" title="Link to Linkedin page">
+                <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
+    <div class="flex-container row" id="about_me">
+      <div class="box">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
           <span>Andre Baldwin</span>
         </h1>
-        <!-- Put a small paragraph about yourself -->
+
         <p>Hi, I'm a Software Developer based in Westland, MI. I've been a developer since 2020. I've worked with multiple technologies helping to deliver scalable, high-performance web applications and solving real-world problems.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+      <div class="box">
+        <img src="./images/myPic.png" alt="Header Image" class="header__image" />
       </div>
     </div>
   </header>
 
   <main class="main" role="main">
-
-    <!-- ***** Work ***** -->
-
     <section class="work" id="work">
       <div class="row">
         <h2>Skills</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <ul class="work__list">
+        <div class="skills_container">
+            <div class="skills_box">
+              <ul class="skills_list">
                 <li>PHP</li>
                 <li>Symfony</li>
                 <li>JavaScript</li>
                 <li>MongoDB</li>
+                <li>BootStrap</li>
+                <li>Docker</li>
               </ul>
-
-              <div class="work__links">
-                <a href="https://" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/andrebaldwin/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
             </div>
-            <div class="work__image-box">
-              <!-- <img src="./images/project-1.png" class="work__image" alt="Project 1" /> -->
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Calculator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
+            <div class="skills_box">
+              <ul class="skills_list">
                 <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Tailwind CSS</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>PHP Unit Test</li>
+                <li>Agile Development</li>
               </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
 
-    <section class="client" id="clients">
+    <section class="career">
       <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        <h2>Career Progression</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Software Developer</h3>
+                <p>Meeting Protocol - Dec. 2022 to Aug. 2026</p>
+                <p>Developed and enhanced web application functionality using PHP, Symfony, REST APIs, and MongoDB to deliver scalable business solutions.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Jr. Software Developer</h3>
+                <p>Match Rx - Nov. 2021 to Dec. 2022</p>
+                <p>Developed software enhancements and resolved application defects using PHP, JavaScript, HTML, CSS, Laravel, and Symfony.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Jr. Software Developer</h3>
+                <p>Bank Supplies - Mar. 2020 to Nov.2021</p>
+                <p>Enhanced and optimized corporate e-commerce applications using PHP and related web technologies.</p>
+            </div>
         </div>
       </div>
     </section>
 
-    <!-- ***** About ***** -->
+    <!-- ***** Projects ***** -->
 
-    <section class="about" id="about">
+    <!-- <section class="projects" id="projects">
       <div class="row">
-        <h2>About Me</h2>
+        <h2>Projects</h2>
         <div class="about__content">
           <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
+              Replace with projects when ready.
             </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <!-- ***** Contact ***** -->
-
   <section class="contact" id="contact">
     <div class="row">
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
+          Whether you're looking for a passionate developer to add value to your project, have some advice for me
+          or just want to say "Hi 👋" in any case feel free to react out. I love connecting with new and interesting people. 😊 The quickest way to reach out to
           me is via an email.
         </p>
-        <!-- Replace the email with yours -->
         <a href="mailto:baldwin43@gmail.com" class="btn">baldwin43@gmail.com</a>
+        
       </div>
     </div>
   </section>
 
   <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/andre-b-532107196/" title="Link to Linkedin page">
-            <img src="./images/linkedin.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class
+  <footer role="contentinfo" class="footer">&copy; 2026 Andre Baldwin</footer>
