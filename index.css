@@ -178,6 +178,11 @@ h2::after {
     margin: var(--gutter-small-1) 0;
 }
 
+.flex-container p:nth-last-of-type(1) {
+    color:#e7dbdb91;
+    font-size: 18px;
+}
+
 .contact p {
     margin: var(--gutter-small-1) 0;
 }
@@ -414,13 +419,13 @@ border-bottom: 1px solid rgb(35, 37, 40);
 /* --------------------------------------- */
 
 .header {
-    background: radial-gradient(circle at 10% 20%, rgba(17, 8, 75, 0.623) 0%, transparent 50%);
+    background: radial-gradient(circle at 10% 20%, rgba(51, 47, 73, 0.623) 0%, transparent 50%);
     height: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-small);
-    padding-bottom: var(--gutter-medium);
+    padding-bottom: var(--gutter-huge);
 }
 
 .header__text {
@@ -542,13 +547,13 @@ border-bottom: 1px solid rgb(35, 37, 40);
 
 .skills_container {
     display: inline-flex;
-    background-color: rgba(15, 5, 45, 0.623);
+    background-color: rgba(51, 47, 73, 0.623);
     border-radius: 5px;
     width: 50%;
 }
 
 .career {
-    background-color: rgba(15, 5, 45, 0.623);
+    background-color: rgba(51, 47, 73, 0.623);
 }
 
 .career p:nth-of-type(1) {
@@ -569,7 +574,7 @@ border-bottom: 1px solid rgb(35, 37, 40);
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: rgba(15, 5, 45, 0.623);
+    background-color: rgba(51, 47, 73, 0.623);
 }
 
 .job_title {
