@@ -33,7 +33,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #0f7b57;
+    --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -65,7 +65,7 @@ html {
 }
 
 main {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(45, 43, 154, 0.05);
 }
 
 body {
@@ -419,7 +419,7 @@ border-bottom: 1px solid rgb(35, 37, 40);
 /* --------------------------------------- */
 
 .header {
-    background: radial-gradient(circle at 10% 20%, rgba(4, 15, 3, 0.623) 0%, transparent 50%);
+    background: radial-gradient(circle at 10% 20%, rgba(51, 47, 73, 0.623) 0%, transparent 50%);
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -498,11 +498,11 @@ border-bottom: 1px solid rgb(35, 37, 40);
     width: 24px;
     height: 24px;
     object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(230, 230, 236, 0.303));
+    filter: drop-shadow(0 2px 4px rgba(63, 41, 187, 1.303));
 }
 
 .skills_list li::marker {
-  color: rgb(79, 220, 160);
+  color:var(--pink);;
   font-size: 2.2rem;
 }
 
@@ -527,6 +527,10 @@ border-bottom: 1px solid rgb(35, 37, 40);
     max-width: 400px;
     height: 250px;
     border-radius: 50%;
+}
+
+.job_title {
+    color: var(--pink);
 }
 
 @media(min-width: 901px) {
@@ -556,22 +560,22 @@ border-bottom: 1px solid rgb(35, 37, 40);
 .skills_box {
     margin: 30px;
     flex-grow: 1;
-    color: white;
+    color: black;
 }
 
 .skills_container {
     display: inline-flex;
-    background-color: #063928;
+    background-color: rgb(209, 208, 208);
     border-radius: 5px;
     width: 50%;
 }
 
 .career {
-    background-color: rgba(4, 21, 15, 0.1);
+    background-color: rgba(51, 47, 73, 0.623);
 }
 
 .career p:nth-of-type(1) {
-    color:rgb(52, 142, 103)
+    color:rgb(139, 164, 239)
 }
 
 .career p:nth-of-type(2) {
@@ -592,7 +596,7 @@ border-bottom: 1px solid rgb(35, 37, 40);
     top: 10px;
     bottom: 0;
     width: 3px;
-    background: linear-gradient(to bottom, var(--pink), rgba(50, 255, 77, 0.3));
+    background: linear-gradient(to bottom, var(--pink), rgba(255, 50, 88, 0.3));
     animation: expandLine 1.2s ease-out forwards;
 }
 
@@ -621,7 +625,7 @@ border-bottom: 1px solid rgb(35, 37, 40);
     position: absolute;
     left: -41px;
     top: 5px;
-    box-shadow: 0 0 15px rgba(50, 255, 57, 0.8), inset 0 0 10px rgba(50, 255, 105, 0.5);
+    box-shadow: 0 0 15px rgba(255, 50, 88, 0.8), inset 0 0 10px rgba(255, 50, 88, 0.5);
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -636,7 +640,7 @@ border-bottom: 1px solid rgb(35, 37, 40);
 }
 
 .about__text p:nth-of-type(4), .about__text p:nth-of-type(5){
-    color:rgb(52, 142, 103);
+    color:rgb(139, 164, 239);
 }
 .about__text a:last-child {
     color:white;
@@ -645,10 +649,6 @@ border-bottom: 1px solid rgb(35, 37, 40);
 
 .about__text p .btn {
     display: inline-block;
-}
-
-.job_title {
-    color: rgb(52, 142, 103);
 }
 
 /* ===== RESPONSIVE SKILLS SECTION ===== */
@@ -780,15 +780,12 @@ border-bottom: 1px solid rgb(35, 37, 40);
 }
 
 /* ===== FOOTER ===== */
-.footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1rem;
-    background-color: rgba(15, 123, 87, 0.1);
     text-align: center;
-    color: var(--white-1);
-    font-size: var(--font-size-small);
+    padding: 2rem 1rem;
 }
 
 /* ---------
